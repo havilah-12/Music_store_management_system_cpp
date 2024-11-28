@@ -36,6 +36,49 @@ The system enhances **customer interactions** and improves operational efficienc
 - **Development Environment**: Visual Studio (or any IDE supporting C++ development)  
 - **Key Concepts Used**: Inheritance, Data Hiding, Exception Handling, Encapsulation  
 
+## 📂 Project Structure
+```
+MusicStoreManagementSystem/
+├── src/                      # Source code files
+│   ├── main.cpp              # Entry point of the application
+│   ├── database.cpp          # Database handling logic
+│   ├── ui.cpp                # User interface logic
+│   ├── exception.cpp         # Exception handling logic
+│   └── models/               # Classes for instrument management (using inheritance and data hiding)
+├── database/                 
+│   └── setup.sql             # SQL scripts to set up the database
+├── README.md                 # Project documentation
+```
+
+---
+
+## 📊 Key C++ OOP Principles Used
+
+1. **Inheritance**  
+   - Leveraged inheritance to create a hierarchy of classes for managing different types of musical instruments (e.g., StringInstruments, PercussionInstruments).  
+   - Reduced code duplication and improved maintainability.  
+
+2. **Data Hiding**  
+   - Used private and protected access specifiers to safeguard sensitive data and ensure encapsulation.  
+   - Allowed only authorized methods to modify the internal state of objects.  
+
+3. **Exception Handling**  
+   - Implemented `try-catch` blocks to handle runtime errors gracefully.  
+   - Ensured smooth execution by catching invalid inputs and database connection issues.  
+
+4. **Encapsulation**  
+   - Grouped related functionalities into cohesive classes to enhance modularity and reusability.  
+
+---
+
+## 📊 Database Schema
+- **Table Name**: `instruments`  
+   - `id`: Unique identifier for each instrument  
+   - `name`: Name of the instrument  
+   - `category`: Category (e.g., strings, percussion)  
+   - `price`: Price of the instrument  
+   - `stock`: Quantity available  
+
 ---
 
 ## 💻 Installation and Setup
@@ -89,49 +132,4 @@ The system enhances **customer interactions** and improves operational efficienc
 3. **Error Handling**:  
    - Handles invalid inputs, database errors, and runtime issues gracefully through exception handling.  
 4. **View Reports**: View detailed inventory and transaction reports.  
-
----
-
-## 📂 Project Structure
-```
-MusicStoreManagementSystem/
-├── src/                      # Source code files
-│   ├── main.cpp              # Entry point of the application
-│   ├── database.cpp          # Database handling logic
-│   ├── ui.cpp                # User interface logic
-│   ├── exception.cpp         # Exception handling logic
-│   └── models/               # Classes for instrument management (using inheritance and data hiding)
-├── database/                 
-│   └── setup.sql             # SQL scripts to set up the database
-├── README.md                 # Project documentation
-```
-
----
-
-## 📊 Key C++ OOP Principles Used
-
-1. **Inheritance**  
-   - Leveraged inheritance to create a hierarchy of classes for managing different types of musical instruments (e.g., StringInstruments, PercussionInstruments).  
-   - Reduced code duplication and improved maintainability.  
-
-2. **Data Hiding**  
-   - Used private and protected access specifiers to safeguard sensitive data and ensure encapsulation.  
-   - Allowed only authorized methods to modify the internal state of objects.  
-
-3. **Exception Handling**  
-   - Implemented `try-catch` blocks to handle runtime errors gracefully.  
-   - Ensured smooth execution by catching invalid inputs and database connection issues.  
-
-4. **Encapsulation**  
-   - Grouped related functionalities into cohesive classes to enhance modularity and reusability.  
-
----
-
-## 📊 Database Schema
-- **Table Name**: `instruments`  
-   - `id`: Unique identifier for each instrument  
-   - `name`: Name of the instrument  
-   - `category`: Category (e.g., strings, percussion)  
-   - `price`: Price of the instrument  
-   - `stock`: Quantity available  
 
