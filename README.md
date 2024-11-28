@@ -36,21 +36,6 @@ The system enhances **customer interactions** and improves operational efficienc
 - **Development Environment**: Visual Studio (or any IDE supporting C++ development)  
 - **Key Concepts Used**: Inheritance, Data Hiding, Exception Handling, Encapsulation  
 
-## 📂 Project Structure
-```
-MusicStoreManagementSystem/
-├── src/                      # Source code files
-│   ├── main.cpp              # Entry point of the application
-│   ├── database.cpp          # Database handling logic
-│   ├── ui.cpp                # User interface logic
-│   ├── exception.cpp         # Exception handling logic
-│   └── models/               # Classes for instrument management (using inheritance and data hiding)
-├── database/                 
-│   └── setup.sql             # SQL scripts to set up the database
-├── README.md                 # Project documentation
-```
-
----
 
 ## 📊 Key C++ OOP Principles Used
 
